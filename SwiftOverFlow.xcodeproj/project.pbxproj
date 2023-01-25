@@ -14,6 +14,12 @@
 		DEBDBCC9297CD8B6004809F7 /* SwiftOverFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDBCC8297CD8B6004809F7 /* SwiftOverFlowTests.swift */; };
 		DEBDBCD3297CD8B6004809F7 /* SwiftOverFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDBCD2297CD8B6004809F7 /* SwiftOverFlowUITests.swift */; };
 		DEBDBCD5297CD8B6004809F7 /* SwiftOverFlowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDBCD4297CD8B6004809F7 /* SwiftOverFlowUITestsLaunchTests.swift */; };
+		DEBDBCE8297CD913004809F7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDBCE7297CD913004809F7 /* WelcomeView.swift */; };
+		DEBDBCEB297CD941004809F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBDBCEA297CD941004809F7 /* Images.xcassets */; };
+		DEBDBCEE297CD9B2004809F7 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDBCED297CD9B2004809F7 /* Images.swift */; };
+		DEBDBCF0297CDE2C004809F7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBDBCEF297CDE2C004809F7 /* Colors.xcassets */; };
+		DEBDBCF3297CE0FC004809F7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDBCF2297CE0FC004809F7 /* Colors.swift */; };
+		DEBDBCF5297CE173004809F7 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDBCF4297CE173004809F7 /* Icons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		DEBDBCCE297CD8B6004809F7 /* SwiftOverFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOverFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBDBCD2297CD8B6004809F7 /* SwiftOverFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOverFlowUITests.swift; sourceTree = "<group>"; };
 		DEBDBCD4297CD8B6004809F7 /* SwiftOverFlowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOverFlowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DEBDBCE7297CD913004809F7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		DEBDBCEA297CD941004809F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DEBDBCED297CD9B2004809F7 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		DEBDBCEF297CDE2C004809F7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DEBDBCF2297CE0FC004809F7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DEBDBCF4297CE173004809F7 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +107,12 @@
 		DEBDBCB5297CD8B5004809F7 /* SwiftOverFlow */ = {
 			isa = PBXGroup;
 			children = (
+				DEBDBCE4297CD8EF004809F7 /* Products */,
+				DEBDBCE3297CD8E8004809F7 /* Features */,
+				DEBDBCE2297CD8E2004809F7 /* Utils */,
+				DEBDBCE1297CD8CF004809F7 /* Resources */,
 				DEBDBCB6297CD8B5004809F7 /* SwiftOverFlowApp.swift */,
 				DEBDBCB8297CD8B5004809F7 /* ContentView.swift */,
-				DEBDBCBA297CD8B6004809F7 /* Assets.xcassets */,
 				DEBDBCBC297CD8B6004809F7 /* SwiftOverFlow.entitlements */,
 				DEBDBCBD297CD8B6004809F7 /* Preview Content */,
 			);
@@ -127,6 +142,81 @@
 				DEBDBCD4297CD8B6004809F7 /* SwiftOverFlowUITestsLaunchTests.swift */,
 			);
 			path = SwiftOverFlowUITests;
+			sourceTree = "<group>";
+		};
+		DEBDBCE1297CD8CF004809F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDBCE9297CD91F004809F7 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DEBDBCE2297CD8E2004809F7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDBCF1297CE0E2004809F7 /* Extensions */,
+				DEBDBCEC297CD9A3004809F7 /* Enums */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DEBDBCE3297CD8E8004809F7 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDBCE5297CD8FC004809F7 /* Authentication */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		DEBDBCE4297CD8EF004809F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		DEBDBCE5297CD8FC004809F7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDBCE6297CD904004809F7 /* Welcome */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		DEBDBCE6297CD904004809F7 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDBCE7297CD913004809F7 /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		DEBDBCE9297CD91F004809F7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDBCBA297CD8B6004809F7 /* Assets.xcassets */,
+				DEBDBCEA297CD941004809F7 /* Images.xcassets */,
+				DEBDBCEF297CDE2C004809F7 /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DEBDBCEC297CD9A3004809F7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDBCED297CD9B2004809F7 /* Images.swift */,
+				DEBDBCF4297CE173004809F7 /* Icons.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		DEBDBCF1297CE0E2004809F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDBCF2297CE0FC004809F7 /* Colors.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +323,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBDBCEB297CD941004809F7 /* Images.xcassets in Resources */,
+				DEBDBCF0297CDE2C004809F7 /* Colors.xcassets in Resources */,
 				DEBDBCBF297CD8B6004809F7 /* Preview Assets.xcassets in Resources */,
 				DEBDBCBB297CD8B6004809F7 /* Assets.xcassets in Resources */,
 			);
@@ -260,6 +352,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEBDBCB9297CD8B5004809F7 /* ContentView.swift in Sources */,
+				DEBDBCF3297CE0FC004809F7 /* Colors.swift in Sources */,
+				DEBDBCF5297CE173004809F7 /* Icons.swift in Sources */,
+				DEBDBCEE297CD9B2004809F7 /* Images.swift in Sources */,
+				DEBDBCE8297CD913004809F7 /* WelcomeView.swift in Sources */,
 				DEBDBCB7297CD8B5004809F7 /* SwiftOverFlowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
